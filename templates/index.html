@@ -4,14 +4,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Redirecting Email</title>
   <meta name="author" content="">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
-  <script>
-    </script>
+
 
 </head>
 
@@ -22,15 +21,19 @@
 <div class="around">
   <p style="font-size: 1.5rem;">The Email You are About to Send too is:</p>
 
-  <h2 class="monospace">{{ value }}</h2>
+  <h2 class="monospace" id="email">{{ value }}</h2>
 
-  <p><a href="#" onclick="">Copy This Email</a></p>
+  <p><a id="copyEmail" onclick="var copyText = document.getElementById('email'); copyText.select();copyText.setSelectionRange(0, 99999); document.execCommand('copy');">Copy This Email</a></p>
+
 </div>
-  <h1><a href={{ value }}>Go To Your Email App</a></h1>
+  <h1><a href="" onclick="window.location = '{{mailTo}}'">Go To Your Email App</a></h1>
 
-<footer class="footer">
-    Built by <a href="https://shad0w.tk/v2/">Shad0w7</a>
-</footer>
+  <footer class="footer">
+    <a href="/create">Generate Your Own Link!</a><br>
+      Built by <a href="https://shad0w.tk/v2/">Shad0w7</a>
+      
+  </footer>
+
 
 </body>
 

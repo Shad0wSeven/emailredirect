@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a Link</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+    <h1>Generate Your Own Link</h1>
+    <p style="margin: 20%; margin-top: 0; margin-bottom: 50px;">If you want to make a mailto: email link a little more slick, use this tool!</p>
+    <form action="" method="post">
+        <p>
+            <h2>Email here:</h2>
+            <input type="text" name="username" class="input">
+        </p>
+
+        <p>
+            <input type="submit" class="button">
+        </p>
+    </form>
+    <footer class="footer">
+        <a href="/create">Generate Your Own Link!</a><br>
+          Built by <a href="https://shad0w.tk/v2/">Shad0w7</a>
+          
+      </footer>
+    
+</body>
+</html>

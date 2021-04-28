@@ -11,13 +11,25 @@ app = Flask(__name__)
 @app.route("/")
 
 def index():
-    username = "none"
-    username = str(request.args.get('v'))
-    print(username)
-    if(username == "None"):
+    email = "None"
+    email = str(request.args.get('v'))
+    # print(username)
+    if(email == "None"):
         return render_template("none.html")
-    return render_template("index.html", value=username)
-    
+    else:
+        emailURL = f'mailto:{email}'
+    return render_template("index.html", value=email, mailTo = emailURL)
+
+@app.route("/create", methods=['post', 'get'])
+def create():
+    if request.method == 'POST':
+        username = request.form.get('username')  # access the data inside 
+        print(username)
+        return render_template('finished.html', email=f'asdf{username}')
+    return render_template('create.html')
+
+
+
 
 if __name__=="__main__":
     app.run(host  = os.getenv('IP', '0.0.0.0'), 
