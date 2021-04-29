@@ -5,9 +5,10 @@ body {
     text-align: center;
   }
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
 
 .monospace {
-    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-family: 'DM Mono', monospace;
 }
 
 .around {
@@ -32,7 +33,9 @@ a:hover {
     bottom: 0;
     width: 100%;
     padding-bottom: 20px;
+    padding-top: 20px;
     text-align: center;
+    background-color: #fff;
   }
 
 .input {
