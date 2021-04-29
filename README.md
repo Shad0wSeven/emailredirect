@@ -9,7 +9,11 @@ Found a much older different implementation of this idea, but wanted to do it in
 
 # Screenshots
 
+## General Usage
+
 ![image](https://user-images.githubusercontent.com/19739712/116490686-8330d900-a887-11eb-8f91-4a3ef7044d12.png)
+
+## Creating a Link
 
 ![image](https://user-images.githubusercontent.com/19739712/116490721-917ef500-a887-11eb-885b-d26b10f67ff6.png)
 
