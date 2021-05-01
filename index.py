@@ -24,7 +24,7 @@ def index():
 def create():
     if request.method == 'POST':
         username = request.form.get('username')  # access the data inside 
-        print(username)
+        # print(username)
         return render_template('finished.html', email=f'https://redirectemail.vercel.app/?v={username}')
     return render_template('create.html')
 
